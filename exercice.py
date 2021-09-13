@@ -27,7 +27,11 @@ def get_nb_char(string: str, char: str) -> int:
 
 
 def get_nb_words(sentence: str) -> int:
-    return 0
+    nb_mots = 1
+    for char in sentence:
+        if char == " ":
+            nb_mots += 1
+    return nb_mots
 
 
 def main() -> None:
