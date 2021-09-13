@@ -3,11 +3,15 @@
 
 
 def is_even_len(string: str) -> bool:
+    if len(string)%2==0:
+        return("La longueur de la chaîne est pair")
+    else:
+        return("La longueur de la chaîne est impaire")
     return False
 
 
 def remove_third_char(string: str) -> str:
-    return ""
+    return(string[:2]+string[3:])
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
